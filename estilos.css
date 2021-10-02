@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h1,h2{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:dimgrey;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.ed-grid{
+    margin-bottom: 10px;
+}
+
+#cursos{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+background-color: rgb(129, 132, 140);
+padding: 10px 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#cursos div{
+    margin-top: 5px;
+    width: 240px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+#cursos div p, #cursos div h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgrey;
+    text-align: center;
+} 
+
+#formulario{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#formulario div{
+    align-self: flex-end;
+}
+form div label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgrey;
+    font-size: 12px;
+}
+
+.form-background{
+    background-color: rgb(219, 236, 217);
+    border-radius: 3px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.boton{
+    background-color: rgb(43, 98, 244);
+    color: white;
+    border-radius: 3px;
+    border: 0;
+    height: 30px;
+    width: 100px;
+}
+
+.field{
+    width: 250px;
+    height: 30px;
+}
+
+.profesor-background{
+    background-color: rgb(219, 236, 217);
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+#profesor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+#profesor div{
+    align-self: flex-end;
+}
+
+#profesor input[type=submit], input[type=button]{
+    width: 250px;
+    height: 30px;
+    border: 0;
+    background-color: rgb(43, 98, 244);
+    color: white;
+    border-radius: 3px;
+}
+
+#profesor .field{
+    margin-bottom: 20px;
+}
+
+div.base-usuarios{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    column-gap: 10px;
+    border-radius: 3px;
+}
+
+table.user-list{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.user-list thead, .student-list thead, .profesor-list thead{
+    text-align: center;
+    background-color: rgb(71, 221, 53);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.user-list tbody, .student-list tbody, .profesor-list tbody{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    background-color: rgb(129, 132, 140);
+}
+
+table.student-list, table.profesor-list{
+    width: 100%;
+}
+
+div.flexboxBoton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type='button']{
+    height: 40px;
+    background-color: rgb(71, 221, 53);
+}
+
+.user-list caption{
+    text-align: left;
+}
+
+#divListas{
+    background-color: rgb(219, 236, 217);
+    padding: 0 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+input{
+    outline: none;
+}
+
+input[type='button']:hover,input[type='submit']:hover{
+    cursor: pointer;
+}
+
+

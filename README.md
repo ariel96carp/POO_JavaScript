@@ -1,0 +1,2 @@
+# Requisitos del Proyecto
+Realizar una aplicacion que permita registrar cursos y usuarios para dichos cursos. Estos usuarios pueden ser alumnos o profesores. Los atributos del objeto "curso" seran: nombre, poster, clases e inscriptos.

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>EDcursos</title>
+</head>
+<body>
+    <div class="ed-grid">
+        <h1>EDcursos con POO</h1>
+    </div>
+    <div class="form-background">
+        <h2>Crear Curso</h2>
+        <form id="formulario" method="GET">
+            <div>
+                <label> <p>Nombre de Curso:</p>
+                    <input type="text" class="field" name="nombreCurso" id="nombreCurso" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Dirección de Póster:</p>
+                    <input type="text" class="field" name="direccionPoster" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Cantidad de Clases:</p>
+                    <input type="number" class="field" name="cantidadClases" required>
+                </label>
+            </div>
+            <div>
+                <input class="boton" type="submit" value="Crear Curso">
+            </div>
+        </form>
+    </div>
+    <div id="cursos">
+    </div>
+    <div class="profesor-background">
+        <h2>Crear Usuario</h2>
+        <form id="profesor" method="GET">
+            <div>
+                <label> <p>Nombre del Usuario:</p>
+                    <input type="text" class="field" name="nombreUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Apellido del Usuario:</p>
+                    <input type="text" class="field" name="apellidoUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Provincia:</p>
+                    <input type="text" class="field" name="provinciaUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Localidad:</p>
+                    <input type="text" class="field" name="localidadUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Domicilio:</p>
+                    <input type="text" class="field" name="domicilioUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Codigo Postal:</p>
+                    <input type="number" class="field" name="codigoUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Número de Teléfono:</p>
+                    <input type="number" class="field" name="numeroUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Email:</p>
+                    <input type="email" class="field" name="emailUsuario" required>
+                </label>
+            </div>
+            <div>
+                <label> <p>Tipo de Usuario:</p>
+                    <select class="field" name="tipoUsuario">
+                        <option value="Profesor">Profesor</option>
+                        <option value="Alumno">Alumno</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label> <p>Curso:</p>
+                    <select class="field" name="cursoUsuario" id="selectorCurso">
+                    </select>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Crear Usuario">
+            </div>
+        </form>
+    </div>
+    <div class="flexboxBoton">
+        <div>
+            <input type="button" value="Mostrar Listas" id="botonListas">
+        </div>
+    </div>
+    <div id="divListas">
+        <table class="user-list">
+        <caption><h2>Usuarios Registrados</h2></caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Provincia</th>
+                <th>Localidad</th>
+                <th>Domicilio</th>
+                <th>Código Postal</th>
+                <th>Número de Teléfono</th>
+                <th>Email</th>
+                <th>Tipo de Usuario</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody id="filaUsuario">
+            
+        </tbody>
+        </table>
+        <div class="base-usuarios">
+        <div>
+            <table class="student-list">
+                <caption><h2>Alumnos Registrados</h2></caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Número de Teléfono</th>
+                        <th>Email</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody id="filaAlumno">
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="profesor-list">
+                <caption><h2>Profesores Registrados</h2></caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Número de Teléfono</th>
+                        <th>Email</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody id="filaProfesor">
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="Scripts/script.js"></script>
+</body>
+</html>
